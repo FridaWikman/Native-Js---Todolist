@@ -1,0 +1,224 @@
+:root {
+  --main-bg-color: #fee1e6;
+  --nav-bg-color: #f8839d;
+  --tasks-bg-color: #e751ce;
+  --createTasks-bg-color: #e3a5fa;
+  --newTask-bg-color: rgb(254, 225, 230, 0.6);
+}
+
+body {
+  background-color: var(--main-bg-color);
+  display: grid;
+  grid-template-areas:
+    'nav'
+    'header'
+    'main';
+  grid-template-columns: auto;
+  grid-template-rows: 5em 90px auto;
+  margin: 0;
+  padding: 0;
+}
+
+/* --NAVBAR-- */
+
+nav {
+  align-items: center;
+  background-color: var(--nav-bg-color);
+  display: flex;
+  grid-area: nav;
+  height: 60px;
+  justify-content: space-between;
+  margin: 0;
+}
+
+h1 {
+  margin-left: 1em;
+}
+
+#ulLinks {
+  display: flex;
+}
+
+.link {
+  color: black;
+  list-style: none;
+  margin-right: 1em;
+}
+
+ul {
+  padding: 0;
+}
+
+/* --HEADER-- */
+
+header {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  grid-area: header;
+  justify-content: center;
+  margin-left: 4em;
+}
+
+#h3Priority {
+  margin-right: 15px;
+}
+
+#btnToCreateTask {
+  background-color: var(--createTasks-bg-color);
+  border: solid;
+  border-color: var(--createTasks-bg-color);
+  border-radius: 5px;
+  box-shadow: 5px 5px 2px #888888;
+  cursor: pointer;
+  padding: 5px;
+  width: 100px;
+}
+
+/* --MAIN-- */
+
+main {
+  grid-area: main;
+}
+
+h2 {
+  padding-left: 3em;
+}
+
+/* --To do list-- */
+
+#tasksBox {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#tasks {
+  background-color: var(--tasks-bg-color);
+  border-radius: 15px;
+  box-shadow: 5px 5px 2px #888888;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+  min-height: 300px;
+  min-width: 240px;
+  padding: 1em;
+  text-align: center;
+}
+
+#ulForTasks {
+  margin: 0;
+}
+
+#taskHeadline {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#newTask {
+  background-color: var(--newTask-bg-color);
+  border-radius: 5px;
+  box-shadow: 2.5px 2.5px 2px #888888;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding-bottom: 10px;
+}
+
+#checkbox {
+  padding: 0;
+  margin: 0;
+}
+
+#contentP-element {
+  cursor: pointer;
+}
+
+#priorityP-element {
+  margin-right: 7px;
+}
+
+.EraseChangeButtons {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 35px;
+  margin-right: 35px;
+  margin-top: 15px;
+}
+
+#flexContainerContentPriority {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 15px;
+  margin-right: 20px;
+}
+
+.deleteButton,
+.changeButton {
+  cursor: pointer;
+}
+
+#idDisplayNone {
+  display: none;
+}
+
+/* --Skapa task-- */
+
+#createChangeBoxes {
+  display: flex;
+}
+
+#createTask,
+#changeTask {
+  background-color: var(--createTasks-bg-color);
+  border-radius: 15px;
+  box-shadow: 5px 5px 2px #888888;
+  margin: 40px;
+  min-height: 100px;
+  min-width: 240px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+#radioButtons,
+#radioButtonsChange {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+#id {
+  margin-bottom: 5px;
+}
+
+#createChange,
+#create {
+  cursor: pointer;
+}
+
+#goToTopBtn {
+  background-color: var(--main-bg-color);
+  border-color: black;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px #888888;
+  cursor: pointer;
+  margin-bottom: 7px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+@media (max-width: 730px) {
+  #createChangeBoxes {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,75 @@
+:root {
+  --main-bg-color: #fee1e6;
+  --nav-bg-color: #f8839d;
+  --tasks-bg-color: #e751ce;
+  --completedTasks-bg-color: #e3a5fa;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  margin: 0;
+  padding: 0;
+}
+
+/* --NAVBAR-- */
+
+nav {
+  align-items: center;
+  background-color: var(--nav-bg-color);
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+}
+
+#headlineAnalytics {
+  margin-left: 1em;
+}
+
+#ulLinksAnalytics {
+  display: flex;
+  margin-right: 1em;
+  padding: 0;
+}
+
+.link {
+  color: black;
+  list-style: none;
+  padding-left: 1em;
+}
+
+/* --MAIN-- */
+
+main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section {
+  width: 50vw;
+}
+
+h2 {
+  margin-top: 1.5em;
+  text-align: center;
+}
+
+#description {
+  text-align: center;
+  margin-bottom: 3em;
+  margin-top: 3em;
+}
+
+#myChart {
+  margin-bottom: 3em;
+  margin-top: 3em;
+  height: 40vh;
+  width: 60vw;
+}
+
+#barChart {
+  margin-bottom: 3em;
+  height: 100vh;
+  width: 60vw;
+}

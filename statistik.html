@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="statistik.css" />
+  </head>
+  <body>
+    <nav>
+      <h1 id="headlineAnalytics">Analytics</h1>
+      <ul id="ulLinksAnalytics">
+        <li class="link"><a href="to-do.html">To do list</a></li>
+        <li class="link"><a href="statistik.html">Analytics</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section>
+        <h2>Analyzing Task Prioritization</h2>
+
+        <div class="chart-container">
+          <p id="description">
+            The diagram illustrates the distribution of tasks based on their
+            priority levels. By analyzing it, we gain a quick overview of the
+            number of tasks with different priorities.
+          </p>
+
+          <select id="chartTypes" name="chart-types">
+            <option selected value="doughnut">Doughnut chart</option>
+            <option value="bar">Bar chart</option>
+          </select>
+
+          <canvas id="myChart"></canvas>
+          <canvas id="barChart" style="display: none"></canvas>
+        </div>
+      </section>
+    </main>
+    <!-- https://cdn.jsdelivr.net/npm/chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1"></script>
+    <script src="statistik.js"></script>
+  </body>
+</html>
